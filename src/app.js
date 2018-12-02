@@ -17,8 +17,7 @@ let options = {
         host: 'localhost:3000',
         basePath: '/v1',
         produces: [
-            "application/json",
-            "application/xml"
+            "application/json"
         ],
         schemes: ['http', 'https']        
     },
@@ -38,6 +37,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.use('/', index);
-app.use('/person', personRoute);
+app.use('/v1/person', personRoute);
 
 module.exports = app;

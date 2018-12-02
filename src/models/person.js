@@ -1,0 +1,4 @@
+class Person {
+  id;
+  name;
+}

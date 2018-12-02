@@ -6,7 +6,8 @@ exports.get = (req, res, next) => {
 
 
 exports.getById = (req, res, next) => {
-    res.status(200).send('Requisição recebida com sucesso!');
+    let id = req.params.id;
+    res.status(200).send(`Requisição recebida com sucesso! ${id}`);
 };
 
 
